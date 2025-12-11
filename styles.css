@@ -1,0 +1,22 @@
+/* Reset CSS Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /* Ganti dengan font yang lebih sesuai jika perlu */
+}
+
+/* Styling Body */
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Warna Utama */
+:root {
+    --primary-color: #1abc9c; /* Hijau yang digunakan di screenshot */
+    --secondary-color: #e74c3c; /* Contoh warna aksen */
+    --text-dark: #2c3e50;
+    --text-light: #ecf0f1;
+}
