@@ -15,19 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Fungsi untuk notifikasi saat tombol Beli/Detail diklik
-    // Ambil semua tombol Beli dan Detail
+   // 2. Fungsi untuk navigasi saat tombol Beli/Detail diklik
     const actionButtons = document.querySelectorAll('.product-card .btn');
     
     actionButtons.forEach(button => {
         button.addEventListener('click', (e) => {
-            // Dapatkan nama produk dari card terdekat
-            const card = e.target.closest('.product-card');
-            const productName = card ? card.querySelector('h3').textContent : 'Produk';
-            const action = e.target.textContent; // "Beli" atau "Detail"
+            const action = e.target.textContent; 
 
-            // Tampilkan notifikasi
-            alert(`${productName} telah ditambahkan ke keranjang (simulasi) atau dialihkan ke halaman detail.`);
+            if (action === 'Detail') {
+                // Arahkan ke halaman detail produk
+                window.location.href = 'detail.html'; 
+            } else if (action === 'Beli') {
+                // Notifikasi atau fungsi keranjang
+                const card = e.target.closest('.product-card');
+                const productName = card ? card.querySelector('h3').textContent : 'Produk';
+                alert(`${productName} telah ditambahkan ke keranjang (simulasi).`);
+            }
         });
     });
 
