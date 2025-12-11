@@ -7,67 +7,124 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>BirdShop Website</h1>
-    <p>Struktur awal proyek sudah siap.</p>
-</body>
-</html>
-<header class="main-header">
-    <div class="logo">
-        <span class="icon">🐦</span> BirdShop
-    </div>
-    <nav class="main-nav">
-        <a href="#" class="active">Beranda</a>
-        <a href="#">Produk</a>
-        <a href="#">Kategori</a>
-        <a href="#">Tentang Kami</a>
-        <a href="#">Kontak</a>
-    </nav>
-    <div class="header-actions">
-        <input type="text" placeholder="Cari burung...">
-        <button class="cart-btn">🛒 <span>0</span></button>
-    </div>
-</header>
 
-<div class="promo-bar">
-    <p>⭐ Promo Spesial! Gratis Ongkir untuk pembelian di atas Rp 500.000</p>
-</div>
+    <header class="main-header">
+        <div class="logo">
+            <span class="icon">🐦</span> BirdShop
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Beranda</a>
+            <a href="#products">Produk</a>
+            <a href="#">Kategori</a>
+            <a href="about.html">Tentang Kami</a> <a href="#">Kontak</a>
+        </nav>
+        <div class="header-actions">
+            <input type="text" placeholder="Cari burung...">
+            <button class="cart-btn">🛒 <span>0</span></button>
+        </div>
+    </header>
 
-<section class="hero-section">
-    <div class="hero-content">
-        <h1>Burung Berkualitas untuk Anda</h1>
-        <p>Temukan burung pilihan terbaik dengan harga terjangkau dan kualitas terpercaya</p>
-        <a href="#products" class="btn primary-btn">Lihat Koleksi</a>
+    <div class="promo-bar">
+        <p>⭐ Promo Spesial! Gratis Ongkir untuk pembelian di atas Rp 500.000</p>
     </div>
-</section>
-<footer class="main-footer">
-    <div class="container footer-grid">
-        <div class="footer-col">
-            <h3>🐦 BirdShop</h3>
-            <p>Toko burung online terpercaya dengan koleksi lengkap dan kualitas terbaik.</p>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Burung Berkualitas untuk Anda</h1>
+            <p>Temukan burung pilihan terbaik dengan harga terjangkau dan kualitas terpercaya</p>
+            <a href="#products" class="btn primary-btn">Lihat Koleksi</a>
         </div>
-        <div class="footer-col">
-            <h4>Navigasi</h4>
-            <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Kategori</a></li>
-                <li><a href="#">Tentang Kami</a></li>
-            </ul>
+    </section>
+    
+    <main>
+        <section class="category-section container">
+            <h2>Kategori Burung</h2>
+            <div class="category-grid">
+                <div class="category-item"> <span class="category-icon">🎶</span> <p>Burung Kicau</p> </div>
+                <div class="category-item"> <span class="category-icon">🌈</span> <p>Burung Hias</p> </div>
+                <div class="category-item"> <span class="category-icon">💚</span> <p>Parkit</p> </div>
+                <div class="category-item"> <span class="category-icon">💕</span> <p>Lovebird</p> </div>
+                <div class="category-item"> <span class="category-icon">🐤</span> <p>Kenari</p> </div>
+                <div class="category-item"> <span class="category-icon">🐦</span> <p>Semua</p> </div>
+            </div>
+        </section>
+    
+        <section id="products" class="products-section container">
+            <h2>Produk Populer</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-tag">Lovebird</div>
+                    <img src="placeholder-bird-1.png" alt="Lovebird Pastel Kuning">
+                    <h3>Lovebird Pastel Kuning</h3>
+                    <p>4 bulan | Jantan</p>
+                    <p class="price">Rp 850.000</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Beli</button>
+                        <button class="btn detail-btn">Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-tag">Kenari</div>
+                    <img src="placeholder-bird-2.png" alt="Kenari Yorkshire">
+                    <h3>Kenari Yorkshire</h3>
+                    <p>6 bulan | Betina</p>
+                    <p class="price">Rp 1.200.000</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Beli</button>
+                        <button class="btn detail-btn">Detail</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-tag">Parkit</div>
+                    <img src="placeholder-bird-3.png" alt="Parkit Belanda">
+                    <h3>Parkit Belanda</h3>
+                    <p>3 bulan | Sepasang</p>
+                    <p class="price">Rp 350.000</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn">Beli</button>
+                        <button class="btn detail-btn">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>🐦 BirdShop</h3>
+                <p>Toko burung online terpercaya dengan koleksi lengkap dan kualitas terbaik.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#">Kategori</a></li>
+                    <li><a href="about.html">Tentang Kami</a></li> </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pengiriman</a></li>
+                    <li><a href="#">Garansi</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+             <div class="footer-col">
+                <h4>Ikuti Kami</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📷 Instagram</a>
+                    <a href="#" class="social-icon">📘 Facebook</a>
+                    <a href="#" class="social-icon">❌ X (Twitter)</a>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-            <h4>Layanan</h4>
-            <ul>
-                <li><a href="#">Cara Pemesanan</a></li>
-                <li><a href="#">Pengiriman</a></li>
-                <li><a href="#">Garansi</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
+        <div class="copyright">
+            &copy; 2025 Ica Asri Lestari BirdShop. All Rights Reserved.
         </div>
-    </div>
-    <div class="copyright">
-        &copy; Ica Asri Lestari. All Rights Reserved.
-    </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
